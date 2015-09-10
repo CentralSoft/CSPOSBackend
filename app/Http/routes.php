@@ -11,6 +11,14 @@
 |
 */
 
+//API ROUTES
+Route::group(['prefix' => 'api'], function() {
+    Route::get('get-all-user', function(){
+        return App\Employee::all()->toJson();
+    });
+});
+//END API ROUTES
+
 Route::get('/', function () {
     return view('welcome');
 });
