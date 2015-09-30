@@ -19,7 +19,7 @@ Route::group(['prefix' => 'api'], function() {
 });
 //END API ROUTES
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('welcome');
 });
 
